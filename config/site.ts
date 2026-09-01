@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Cal Grimes - Applied AI Engineer",
+  name: "Cal Grimes - Solution Architecture, Software Development and Applied AI",
   authorName: "Cal Grimes",
   username: "calgrimes",
   description:
-    "Cal Grimes - Applied AI Engineer working at the intersection of AI, data, and scalable software systems. Explore my projects and experience in solution architecture, software development and AI.",
+    "Cal Grimes - Solution Architect and Software Developer with expertise in applied AI, data engineering, and scalable software systems. Explore my projects and experience in solution architecture, software development and AI.",
   url: "https://calgrimes.co.uk",
   links: {
     github: "https://github.com/calgrimes",
