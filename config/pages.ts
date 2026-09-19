@@ -57,11 +57,11 @@ export const pagesConfig: PagesConfig = {
   blogs: {
     title: "Blogs",
     description:
-      "Thoughts on AI, software engineering, and building in public.",
+      "",
     metadata: {
       title: "Blogs",
       description:
-        "Cal Grimes's blog — thoughts on AI, software engineering, and building in public.",
+        "Cal Grimes's blog"
     },
   },
   experience: {
