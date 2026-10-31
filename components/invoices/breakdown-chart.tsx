@@ -62,7 +62,7 @@ export function BreakdownChart({
               border: "1px solid hsl(var(--border))",
               borderRadius: "0.375rem",
             }}
-            formatter={(value: number) => formatMoney(Math.round(value), currency)}
+            formatter={(value: unknown) => typeof value === "number" ? formatMoney(Math.round(value), currency) : ""}
             labelStyle={{ color: "hsl(var(--muted-foreground))" }}
           />
           <Bar
