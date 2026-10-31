@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 
@@ -19,12 +18,11 @@ import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { getFeaturedBlogs } from "@/lib/blogs";
 import { cn } from "@/lib/utils";
-import profileImg from "@/public/profile-img.jpg";
 
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
   description:
-    "Cal Grimes - Solution Architect working at the intersection of AI, data, and scalable software systems. Explore my projects and experience.",
+    "Cal Grimes - Solution Architect. Explore my projects and experience.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -77,33 +75,27 @@ export default async function IndexPage() {
 
       <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
-          <Image
-            src={profileImg}
-            height={100}
-            width={100}
-            sizes="100vw"
-            className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Cal Grimes - Solution Architect Portfolio"
-            priority
-          />
           <AnimatedText
             as="h1"
             delay={0.2}
-            className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
+            className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight"
           >
             Cal Grimes
           </AnimatedText>
-          <AnimatedText
-            as="h3"
-            delay={0.4}
-            className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
-          >
-            Solution Architect
-          </AnimatedText>
-          <div className="mt-4 max-w-[42rem] text-center">
-            <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Solution Architect working at the intersection of AI, data, and
-              scalable software systems.
+          <div className="flex items-center gap-4 justify-center">
+            <div className="h-1 w-12 bg-primary/30 rounded-full" />
+            <AnimatedText
+              as="h3"
+              delay={0.4}
+              className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl text-primary font-semibold"
+            >
+              Solution Architect
+            </AnimatedText>
+            <div className="h-1 w-12 bg-primary/30 rounded-full" />
+          </div>
+          <div className="mt-6 max-w-[42rem] text-center">
+            <p className="leading-relaxed text-muted-foreground text-sm sm:text-base">
+              Working with AI, data, and scalable software systems.
             </p>
           </div>
 

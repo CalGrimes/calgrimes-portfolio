@@ -65,16 +65,16 @@ export function InvoiceTable({ invoices }: { invoices: InvoiceWithLines[] }) {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                       <DropdownMenuItem asChild>
-                        <Link href={`/invoices/${invoice.id}`}>View Details</Link>
+                        <Link href={`/admin/${invoice.id}`}>View Details</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
-                        <Link href={`/invoices/${invoice.id}/edit`}>Edit</Link>
+                        <Link href={`/admin/${invoice.id}/edit`}>Edit</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
-                        <Link href={`/invoices/${invoice.id}?export=pdf`}>Download PDF</Link>
+                        <Link href={`/admin/${invoice.id}?export=pdf`}>Download PDF</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
-                        <Link href={`/invoices/${invoice.id}?export=email`}>Email Draft</Link>
+                        <Link href={`/admin/${invoice.id}?export=email`}>Email Draft</Link>
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>

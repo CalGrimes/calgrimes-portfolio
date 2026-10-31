@@ -17,7 +17,7 @@ export default async function AdminLayout({
     <div className="flex min-h-screen flex-col bg-background">
       <header className="border-b">
         <div className="container flex h-16 items-center justify-between">
-          <a className="font-heading text-lg" href="/invoices">
+          <a className="font-heading text-lg" href="/admin">
             Invoice desk
           </a>
           <form

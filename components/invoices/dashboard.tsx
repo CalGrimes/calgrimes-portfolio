@@ -15,7 +15,7 @@ export async function InvoiceDashboard() {
           <p className="text-muted-foreground mt-2">Manage and track your invoices</p>
         </div>
         <Button asChild>
-          <Link href="/invoices/new">
+          <Link href="/admin/new">
             <Plus className="mr-2 h-4 w-4" />
             New Invoice
           </Link>

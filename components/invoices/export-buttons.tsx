@@ -24,10 +24,14 @@ export function ExportButtons({ invoiceId }: ExportButtonsProps) {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem asChild>
-          <a href={`/invoices/${invoiceId}?export=pdf`}>Download as PDF</a>
+          <a href={`/api/invoices/${invoiceId}/pdf`} download>
+            Download PDF
+          </a>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
-          <a href={`/invoices/${invoiceId}?export=email`}>Email Draft</a>
+          <a href={`/api/invoices/${invoiceId}/email`} download>
+            Download Email Draft
+          </a>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

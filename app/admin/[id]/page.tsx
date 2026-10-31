@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExportButtons } from "@/components/invoices/export-buttons";
+import { StatusUpdater } from "@/components/invoices/status-updater";
 import { getInvoice } from "@/lib/invoices/repository";
 import { formatMoney } from "@/lib/invoices/money";
 
@@ -42,7 +43,7 @@ export default async function InvoiceDetailPage({
         <div className="flex gap-3">
           <ExportButtons invoiceId={invoice.id} />
           <Button asChild variant="outline">
-            <Link href="/invoices">Back</Link>
+            <Link href="/admin">Back</Link>
           </Button>
         </div>
       </div>
@@ -76,6 +77,9 @@ export default async function InvoiceDetailPage({
               <dd>{invoice.currency}</dd>
             </div>
           </dl>
+          <div className="mt-6 border-t pt-6">
+            <StatusUpdater invoiceId={invoice.id} currentStatus={invoice.status} />
+          </div>
         </div>
 
         <div className="rounded-lg border p-6">

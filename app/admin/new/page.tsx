@@ -15,7 +15,7 @@ export default function NewInvoicePage() {
 
       <InvoiceForm
         onSuccess={(id) => {
-          router.push(`/invoices/${id}`);
+          router.push(`/admin/${id}`);
         }}
       />
     </div>
